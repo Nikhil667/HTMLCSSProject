@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>University Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="img/b.ico">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <nav>
+            <a href="#"><img src="img/logo.svg" alt="symbol"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"  onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+
+            <h1>One Of The Most Prestigious University</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam natus quod dolorum, nisi, hic id repudiandae amet fuga voluptatibus nihil atque. Omnis deleniti dolorum veritatis optio nisi maxime cum quam?</p>
+            <a href="#" class="hero-btn">Show More</a>
+        </div>
+
+    </header>
+
+    <section class="campus">
+        <h2> Our Global Campus</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate asperiores ipsum, totam doloremque minima voluptate, eum maiores iste vitae laboriosam quod, officia illo saepe? Eum dolor praesentium beatae nam veniam!</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="./img/london.png" alt="pic">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="./img/newyork.png" alt="pic">
+                <div class="layer">
+                    <h3>NEW YORK</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="./img/washington.png" alt="pic">
+                <div class="layer">
+                    <h3>WASHINGTON</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque augue mi, pellentesque non Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/> Quisque augue mi, pellentesque non consectetur adipiscing elit. Quisque augue mi, pellentesque non
+        </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+            
+        </div>
+    </footer>
+    
+</body>
+
+<script>
+    var  navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+       navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+       navLinks.style.right = "-200px";
+    }
+</script>
+</html>
